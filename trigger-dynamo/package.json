@@ -1,0 +1,16 @@
+{
+  "name": "trigger-dynamo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "invoke:local": "sls invoke local -f hero-insert --path requests-mock/hero.insert.json",
+    "invoke": "sls invoke -f hero-insert --path requests-mock/hero.insert.json",
+    "deploy": "sls deploy"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "aws-sdk": "^2.838.0",
+    "uuid": "^8.3.2"
+  }
+}
